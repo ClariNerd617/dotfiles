@@ -62,9 +62,11 @@ alias la='ls -a'
 alias l='ll -a'
 alias cat='batcat'
 eval "$(zoxide init bash)"
-alias nvim='/opt/nvim-linux64/bin/nvim'
+alias nvim='/opt/nvim-linux64/bin/nvim' # This ensures the correct version of nvim is used
 alias cd='z'
 alias lzg='lazygit'
+alias pc='podman-compose'
+alias p='podman'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
@@ -74,3 +76,4 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH=$BUN_INSTALL/bin:$PATH
 export DENO_INSTALL="/home/henry/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
+export PATH=$PATH:/usr/local/go/bin
