@@ -5,11 +5,17 @@ case $- in
 esac
 
 export OSH='/home/henry/.oh-my-bash'
+
 OSH_THEME="powerline-icon"
+
 export UPDATE_OSH_DAYS=13
+
 ENABLE_CORRECTION="true"
+
 HIST_STAMPS='yyyy-mm-dd'
+
 OMB_USE_SUDO=true
+
 OMB_PROMPT_SHOW_PYTHON_VENV=true # enable
 
 # Which completions would you like to load? (completions can be found in ~/.oh-my-bash/completions/*)
@@ -58,6 +64,8 @@ alias cat='batcat'
 eval "$(zoxide init bash)"
 alias nvim='/opt/nvim-linux64/bin/nvim'
 alias cd='z'
+alias lzg='lazygit'
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
