@@ -7,17 +7,19 @@ class SuppressLogging:
     """
     A class for temporarily suppressing logging messages.
 
-    This class can be used as a decorator or a context manager to suppress Logging
-    messages at a specified level or higher. It supports both synchronous and
-    asynchronous functions.
+    This class can be used as a decorator or a context manager to suppress
+    logging messages at a specified level or higher.
+    It supports both synchronous and asynchronous functions.
 
-    This can be useful when you want to suppress logging messages temporarily in
-    a specific part of your code, especially if it gets especially log-heavy.
+    This can be useful when you want to suppress logging messages temporarily
+    in a specific part of your code, such as when running tests
+    or when you want to silence noisy loggers.
 
     Parameters
     ----------
     level : int, optional
-        The logging level at which to suppress messages. The default is logging.CRITICAL.
+        The logging level at which to suppress messages.
+        The default is logging.CRITICAL.
 
     Attributes
     ----------
@@ -64,11 +66,17 @@ class SuppressLogging:
     ... async def my_async_function():
     ...     logging.debug("This debug message will not be seen")
     ...     print("Async function is running")
+
+    Asynchronously using as a context manager:
+
+    >>> async with SuppressLogging(level=logging.INFO):
+    ...     logging.info("This info message will not be seen")
+    ...     print("Inside async context manager")
     """
 
     def __init__(self, level=logging.CRITICAL):
         """
-        Initializes the SuppressLogging object with the specified logging level.
+        Initializes the SuppressLogging object with the specified logging level
         """
         self.level = level
         self.old_level = logging.root.manager.disable
@@ -86,7 +94,8 @@ class SuppressLogging:
         Returns
         -------
         callable
-            A wrapper function that applies the logging suppression to the given function.
+            A wrapper function that applies the logging suppression
+            to the given function.
         """
         if asyncio.iscoroutinefunction(func):
             @wraps(func)
