@@ -1,7 +1,14 @@
+# Ensures tmux is running
 if [ "$TMUX" = "" ]; then tmux; fi
+# Check if the shell is interactive
 case $- in
-*i*) ;;
-*) return ;;
+*i*)
+	# If interactive, do nothing and continue
+	;;
+*)
+	# If not interactive, exit the .bashrc to prevent further execution
+	return
+	;;
 esac
 
 export OSH='/home/henry/.oh-my-bash'
@@ -67,6 +74,7 @@ alias cd='z'
 alias lzg='lazygit'
 alias pc='podman-compose'
 alias p='podman'
+alias k='kubectl'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
