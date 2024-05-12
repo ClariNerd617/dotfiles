@@ -85,3 +85,4 @@ export PATH=$BUN_INSTALL/bin:$PATH
 export DENO_INSTALL="/home/henry/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 export PATH=$PATH:/usr/local/go/bin
+export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
