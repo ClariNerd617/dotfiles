@@ -9,7 +9,8 @@ I use bash for my shell. Yes, I know it is basic, but it is what I know best. I 
 I am using Oh-My-Bash which is similar to Oh-My-Zsh except you don't have to install zsh. You can find it [here](https://ohmybash.nntoan.com/).
 
 I am very opinionated, so I will list the reasons I use Bash instead of Zsh below:
- - I am lazy
+
+- I am lazy
 
 This concludes the reasons I use Bash instead of Zsh.
 
@@ -26,5 +27,3 @@ More tools will be added as I expand this repo.
 To install these dotfiles, literally clone the repo, I don't have anything fancy yet. I will add a script to automate the process in the future.
 
 If you know what dotfiles are and don't know how to clone a repo, I have many questions for you, starting with "What the hell are you doing here?"
-
-
