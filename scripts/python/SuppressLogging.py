@@ -15,35 +15,14 @@ class SuppressLogging:
     in a specific part of your code, such as when running tests
     or when you want to silence noisy loggers.
 
-    Parameters
-    ----------
-    level : int, optional
-        The logging level at which to suppress messages.
-        The default is logging.CRITICAL.
-
     Attributes
     ----------
     level : int
         The logging level at which to suppress messages.
+        The default is logging.CRITICAL.
     old_level : int
         The previous logging level before the suppression was activated.
 
-    Methods
-    -------
-    __call__(func)
-        Decorator to apply logging suppression to the given function.
-    __enter__()
-        Enter the runtime context related to this object.
-    __exit__(exc_type, exc_val, exc_tb)
-        Exit the runtime context related to this object.
-    __aenter__()
-        Asynchronously enter the runtime context related to this object.
-    __aexit__(exc_type, exc_val, exc_tb)
-        Asynchronously exit the runtime context related to this object.
-    __repr__()
-        Return the official string representation of the object.
-    __str__()
-        Return the human-readable string representation of the object.
 
     Examples
     --------
