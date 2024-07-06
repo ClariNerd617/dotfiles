@@ -80,6 +80,7 @@ alias lzg='lazygit'
 alias pc='podman-compose'
 alias p='podman'
 alias k='kubectl'
+alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
