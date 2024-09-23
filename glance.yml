@@ -1,0 +1,96 @@
+theme:
+  background-color: 240 21 15
+  contrast-multiplier: 1.2
+  primary-color: 217 92 83
+  positive-color: 115 54 76
+  negative-color: 347 70 65
+pages:
+  - name: Home
+    columns:
+      - size: small
+        widgets:
+          - type: weather
+            hour-format: 24h
+            location: Nashua, New Hampshire, United States 
+          - type: bookmarks
+            groups:
+            - links:
+              - title: XDA-Developers
+                url: https://www.xda-developers.com/
+              - title: Omnivore
+                url: https://omnivore.app/home
+              - title: TropicalTidbits
+                url: https://www.tropicaltidbits.com/
+              - title: GitHub
+                url: https://www.github.com/
+              - title: CCI Reanalyzer
+                url: https://climatereanalyzer.org/
+              - title: RealPython
+                url: https://realpython.com/
+              - title: YouTube Music
+                url: https://music.youtube.com/
+              - title: RAMMB-Slider - CIRA
+                url: https://rammb-slider.cira.colostate.edu/
+              - title: SonarCloud - Dashboard
+                url: https://sonarcloud.io/projects
+          - type: twitch-channels
+            channels:
+              - theprimeagen
+              - stormchase_tv
+              - djcristianadematos
+              - the8bitdrummer
+              - sonofawesker
+              - demondiceofficial
+              - katzekei
+              - rtgame
+      - size: full
+        widgets:
+          - type: search
+            search-engine: duckduckgo
+          - type: rss
+            limit: 10
+            collapse-after: 5
+            style: horizontal-cards 
+            cache: 3h
+            feeds:
+              - url: https://chinesecookingdemystified.substack.com/feed
+                title: Chinese Cooking Demystified
+              - url: https://selfhostedheaven.com/feed.xml
+                title: Selfhosted Heaven
+              - url: https://bits.debian.org/feeds/feed.rss
+                title: Bits from Debian
+              - url: https://blog.podman.io/feed
+                title: Podman Blog
+              - url: https://ciechanow.ski/atom.xml
+              - url: https://www.joshwcomeau.com/rss.xml
+                title: Josh Comeau
+              - url: https://samwho.dev/rss.xml
+              - url: https://awesomekling.github.io/feed.xml
+              - url: https://ishadeed.com/feed.xml
+                title: Ahmad Shadeed
+              - url: https://fasterthanli.me/index.xml
+                title: fasterthanlime
+              - url: https://go.dev/blog/feed.atom
+                title: The Go Blog
+              - url: https://www.mend.io/feed/
+                title: Mend.io AppSec Blog
+              - url: https://cprss.s3.amazonaws.com/golangweekly.com.xml
+                title: Golang Weekly
+              - url: https://lethain.com/feeds.xml
+                title: Irrational Exuberance
+              - url: https://issendai.livejournal.com/data/rss
+                title: Issendai
+              - url: https://pycoders.com/feed/XlhU2RVG
+                title: PyCoder's Weekly
+          - type: videos
+            style: grid-cards
+            collapse-after-rows: 2
+            channels:
+              - UC0Eqb484X8EiNrFLSUQVsaA # Soundsmith
+              - UCUyeluBRhGPCW4rPe_UvBZQ # PrimeTime
+              - UCYO_jab_esuFRV4b17AJtAw # 3b1b
+              - UCUMwY9iS8oMyWDYIe6_RmoA # No Boilerplate
+              - UCsCNU-ptlze2tqAJSDeVGNQ # Post 10
+              - UCNLRcEn78Vc62C3GkMvBgtA # saveitforparts
+              - UCYeGh5VML5XPr5jYnzh3J6g # GeologyHub
+
