@@ -1,0 +1,52 @@
+[battery]
+full_symbol = '🔋 '
+charging_symbol = '⚡️ '
+discharging_symbol = '💀 '
+
+[bun]
+format = 'via [🍔 $version](bold green) '
+
+[container]
+format = '[$symbol \[$name\]]($style) '
+
+[deno]
+format = 'via [🦕 $version](green bold) '
+
+[git_branch]
+symbol = '🌱 '
+truncation_length = 4
+truncation_symbol = ''
+ignore_branches = ['master', 'main']
+
+[git_commit]
+commit_hash_length = 4
+tag_symbol = '🔖 '
+
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+cherry_pick = '[🍒 PICKING](bold red)'
+
+[git_status]
+conflicted = '🏳'
+ahead = '🏎💨'
+behind = '😰'
+diverged = '😵'
+up_to_date = '✓'
+untracked = '🤷'
+stashed = '📦'
+modified = '📝'
+staged = '[++\($count\)](green)'
+renamed = '👅'
+deleted = '🗑'
+
+[gleam]
+format = 'via [⭐ $version](bold red) '
+
+[golang]
+format = 'via [$symbol($version )($mod_version )]($style)'
+
+[sudo]
+style = 'bold green'
+symbol = '👩‍💻 '
+disabled = false
+
